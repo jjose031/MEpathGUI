@@ -326,7 +326,7 @@ class MainWindow(QWidget):
         self.setAcceptDrops(True)
 
         self.setGeometry(50, 50, 900, 900)
-        self.setWindowIcon(QIcon('icon2.png'))
+        self.setWindowIcon(QIcon('icon.png'))
         self.setWindowTitle('MEpathGUI')
 
         self.canvas = MplCanvas(self, width=5, height=4, dpi=100)
@@ -1432,7 +1432,7 @@ class AddSpeciesWindow(QDialog):
         self.setWindowFlags(self.windowFlags()
                     ^ Qt.WindowContextHelpButtonHint)
 
-        self.setWindowIcon(QIcon('icon2.png'))
+        self.setWindowIcon(QIcon('icon.png'))
 
         layout = QVBoxLayout()
         label = QLabel("ALL SPECIES MUST HAVE UNIQUE NAMES!\nSEPARATE ENTRIES BY COMMA")
@@ -1499,7 +1499,7 @@ class EditSpeciesWindow(QDialog):
     def __init__(self):
         super().__init__()
 
-        self.setWindowIcon(QIcon('icon2.png'))
+        self.setWindowIcon(QIcon('icon.png'))
 
         self.setWindowFlags(self.windowFlags()
                     ^ Qt.WindowContextHelpButtonHint)
@@ -1567,7 +1567,7 @@ class AddConnectionWindow(QDialog):
                         int(window.geometry().y() + window.geometry().height()/3),
                         int(window.geometry().width()/5),
                         int(window.geometry().height()/5))
-        self.setWindowIcon(QIcon('icon2.png'))
+        self.setWindowIcon(QIcon('icon.png'))
 
         self.label = QLabel("Add connection:")
         self.label.setFont(QFont('Arial', 12))
